@@ -8,6 +8,7 @@ El repositorio contiene las siguientes carpetas:
 
 - `requirements.txt`: contiene las dependencias y requisitos necesarios para el proyecto.
 - `load.py`: carga el archivo `pavia.txt` para que se pueda trabajar con él.
+- `charts.py`: genera un gráfico con el tiempo de ejecución del directorio proporcionado.
 
 Los algoritmos K-Means utilizados son:
 
@@ -23,3 +24,4 @@ Para finalizar, se incluye un archivo llamado `execute.sh` que realiza las sigui
 3. Instala las dependencias y módulos necesarios especificados en el archivo `requirements.txt`.
 4. Llama al archivo `load.py` para cargar el archivo `pavia.txt`.
 5. llama a los diferentes algoritmos para registrar el tiempo de ejecución, y luego guarda los resultados en la carpeta `kmeans`, con un subdirectorio correspondiente a la versión utilizada.
+6. Llama al archivo `charts.py` para generar gráficos con el tiempo de ejecución de las diferentes versiones en el subdirectorio correspondiente a la versión utilizada.
