@@ -65,5 +65,7 @@ do
 done
 
 # Generate charts
+echo "Executing charts.py..."
 python3 charts.py --directories kmeans/mpi/macqueenV1 kmeans/mpi/macqueenV2 --mpi True
 python3 charts.py --directories kmeans/sequential/macqueenV1 kmeans/sequential/macqueenV2 --mpi False
+echo "Finished execution of charts.py."
