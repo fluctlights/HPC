@@ -48,7 +48,7 @@ do
                 else
                     sleep $sleep
                     echo "Executing $file with k=$k and p=$num_processes"
-                    mpiexec -n $num_processes --allow-run-as-root --use-hwthread-cpus python3 "$file" --k $k --distance_metric euclidean --max_iters 100 --centroid_tolerance 0.2 --image False >
+                    mpiexec -n $num_processes --allow-run-as-root --use-hwthread-cpus python3 "$file" --k $k --distance_metric euclidean --max_iters 100 --centroid_tolerance 0.2 --image False --repetitions $repetitions
                     echo "Finished execution of $file with k=$k and p=$num_processes"
                 fi
             done
