@@ -63,3 +63,7 @@ do
         done
     fi
 done
+
+# Generate charts
+python3 charts.py --directories kmeans/mpi/macqueenV1 kmeans/mpi/macqueenV2 --mpi True
+python3 charts.py --directories kmeans/sequential/macqueenV1 kmeans/sequential/macqueenV2 --mpi False

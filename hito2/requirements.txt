@@ -1,6 +1,7 @@
+gdown==5.1.0
+matplotlib==3.5.0
 mpi4py==3.1.5
 numpy==1.26.4
-gdown==5.1.0
+opencv-python==4.9.0.80
 openpyxl==3.1.2
 pandas==2.2.1
-opencv-python==4.9.0.80
