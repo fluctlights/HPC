@@ -1,18 +1,16 @@
 TARGET = macqueen
-
-SRC = macqueen.c
-
-CC = gcc
-
-LDFLAGS = -lm
+SRC = macqueen.cpp
+CC = g++
+CFLAGS = -ggdb -std=c++17
+LDFLAGS = `pkg-config opencv4 --cflags --libs`
 
 all: $(TARGET)
 
 $(TARGET): $(SRC)
-	$(CC) -o $@ $(SRC) $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $@ $(SRC) $(LDFLAGS)
 
 clean:
 	rm -f $(TARGET)
 
 run: $(TARGET)
-	./$(TARGET) 2 0 100 0.2 1
+	./$(TARGET)
