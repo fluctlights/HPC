@@ -37,3 +37,6 @@ for file in "${files[@]}"; do
         fi
     done
 done
+
+# Clean executables
+make clean
