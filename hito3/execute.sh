@@ -6,7 +6,7 @@ max_k=10
 repetitions=5
 sleep_time=5
 openmp_threads=(4 8 12 24)
-files=("macqueen_OpenMP_V2" "macqueen_OpenMP_V1" "macqueen_OpenMP_V2")
+files=("macqueen" "macqueen_OpenMP_V1" "macqueen_OpenMP_V2")
 
 # Load pavia.txt to apply K-Means
 echo "Executing load.py..."
