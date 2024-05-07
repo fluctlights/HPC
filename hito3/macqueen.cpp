@@ -215,7 +215,7 @@ void timed_kmeans(int k, int distance_metric, int max_iters, double centroid_tol
     if (!file_exists) {
         file << "k;distance_metric;max_iters;centroid_tolerance;repetitions;image;average_time" << endl;
     }
-    file << k << ";" << distance_metric << ";" << max_iters << ";" << centroid_tolerance << ";" << repetitions << ";" << image << ";" << average_time << endl;
+    file << k << ";" << distance_metric << ";" << max_iters << ";" << centroid_tolerance << ";" << repetitions << ";" << average_time << endl;
     file.close();
 }
 

@@ -40,3 +40,9 @@ done
 
 # Clean executables
 make clean
+
+# Generate charts
+echo "Executing charts.py..."
+python3 charts.py --directories kmeans/OpenMP/V1 kmeans/OpenMP/V2 --OpenMP True
+python3 charts.py --directories kmeans/sequential --OpenMP False
+echo "Finished execution of charts.py."
