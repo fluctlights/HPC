@@ -32,7 +32,7 @@ if __name__ == "__main__":
             plt.grid(axis='y')
         else:
             plt.figure(figsize=(8, 6))
-            plt.bar(df_sorted['K'], df_sorted['average_time'], color='skyblue')
+            plt.bar(df_sorted['k'], df_sorted['average_time'], color='skyblue')
             plt.title('Execution Time')
             plt.xlabel('Number of Clusters (K)')
             plt.ylabel('Execution Time (seconds)')
